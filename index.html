@@ -1,1 +1,643 @@
-Hello World
+<!DOCTYPE html>
+<html lang=”ru”>
+	<head>
+		<!-- Meta -->
+		<meta charset="utf-8">
+		<meta name="description" content="">
+        <meta name="keywords" content="">
+		<title>Магазин</title>
+		<!--  CSS -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<!--  FONTS -->
+		<link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+		<!--  JS -->
+		<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="js/script.js" ></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<!-- HEADER -->
+			<header>
+			
+				<div id='header-block1'>
+				<div class="row vcenter">
+				<div class='col-xs-6 col-sm-2 col-md-2'>
+					<p>
+						Выбрать валюту:
+						<select>
+							<option>₽</option>
+							<option>$</option>
+						</select>					
+					</p>
+					</div> <!--/.class='col-xs-12 col-sm-6 col-md-3'-->
+					<div class='col-xs-6 col-sm-3 col-sm-offset-7 col-md-3 col-md-offset-7'>
+						<nav>
+							<a href="#">Информация</a>
+							<a href="#">Доставка и оплата</a>
+							<a href="#">Контакты</a>
+						</nav>
+					</div> <!--/.class='col-xs-12 col-sm-6 col-md-3'-->					
+				</div> 
+				</div> <!-- /#header-block1 -->
+				<div id='header-block2'>
+					<div class="row vcenter">
+					
+					<div class='col-md-8'>
+						<div id='menu'>
+							<nav class="navbar-default nav-justified">						  
+								<!-- Brand and toggle get grouped for better mobile display -->
+								<div class="navbar-header">
+								  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								  </button>
+								  <img id="logo" src="images/logo.png" alt="logo" >
+								</div>
+
+								<!-- Collect the nav links, forms, and other content for toggling -->
+								<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								  <ul>
+									<li><a href="#">Все товары</a></li>
+									<li><a href="#">Одежда</a></li>
+									<li><a href="#">Электроника</a></li>
+									<li><a href="#">Спорт и отдых</a></li>
+								  </ul>
+								</div><!-- /.navbar-collapse -->
+							  
+							</nav>
+						</div> <!-- /#menu -->
+					</div>
+					<div class='col-md-3 col-md-offset-1'>
+						<p>
+							<i class="fa fa-phone" aria-hidden="true"></i>
+							<span>8 800 000 00 00</span> 
+							<br>
+							<span>Мы перезвоним</span>
+						</p>
+					</div>
+					</div> <!-- /.row -->
+				</div> <!-- /#header-block2 -->
+				<div id='header-block3'>
+					<div class="row vcenter">
+						<div class='col-xs-6 col-sm-2 col-md-2 col-lg-2'> 
+							<div class="dropdown">
+							  <button class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+								Каталог товаров
+								<span class="caret"></span>
+							  </button>
+							  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+								<li><a href="#">Товар 1</a></li>
+								<li><a href="#">Товар 2</a></li>
+								<li><a href="#">Товар 3</a></li>
+							  </ul>
+							</div>
+						</div>
+						<div class='col-xs-6 col-sm-10 col-md-3 col-lg-4'>
+							<p>
+								<input type="text" placeholder="Поиск">
+								<i class="fa fa-search" aria-hidden="true"></i>
+							</p>
+						</div>
+						<div class='col-xs-12 col-sm-12 col-md-7 col-lg-6'>
+							<div id='block-icons'>
+								<div class= 'block-icons-item'>
+									<div class ='icon'>
+										<img src="images/icon1.png" alt="icon1" >
+									</div>
+									<a href="#">Сравнить</a>
+								</div>
+								<div class= 'block-icons-item'>
+									<div class ='icon'>
+										<img src="images/icon2.png" alt="icon2" >
+									</div>
+									<a href="#">Избранное</a>
+								</div>
+								<div class= 'block-icons-item'>
+									<div class ='icon'>
+										<img src="images/icon3.png" alt="icon3" >
+									</div>
+									<a href="#">Кабинет</a>
+								</div>
+								<div class= 'block-icons-item'>
+									<div class ='icon'>
+										<img src="images/icon4.png" alt="icon4" >
+									</div>
+									<a href="#">Корзина</a>
+								</div>
+								
+							</div> <!-- /#block-icons -->
+						</div>
+					</div>
+				</div> <!-- /#header-block3 -->
+				
+			</header>
+			
+			<main>
+			
+			<!-- BANNER -->
+			
+			<section id="banner">
+				<div class="row vcenter">
+					<div class= 'col-xs-12 col-sm-6 col-md-6'>
+						<h1>Новые горизоты c телеви<wbr>зорами Samsung</h1>
+						<p>Новое поколение телевизоров Samsung с вогнутым экраном поможет вам по-новому взгдянуть на старые добрые фильмы и восхититься качеством новых.
+							<br>
+						Невообразимые детали природы, мощные спецэффекты, мельчайшая мимика лиц – ничто не ускользнет от вашего внимания!</p>
+						<a href="#">Подробнее</a>
+					</div>					
+					<img class= 'img col-xs-12 col-sm-4 col-md-4 col-md-offset-2' src="images/tv.png" alt="tv" >					
+				</div><!-- /.row vcenter -->	
+			</section><!-- /#banner -->
+			
+			<!-- GOODS -->
+			
+			<section id='goods'>
+				<div class="row vcenter">
+					<h2>Сезонные товары</h2>
+					<ul id="myTab">
+					  <li class="active"><a href="#product" data-toggle="tab">Товар дня</a></li>
+					  <li><a href="#sale" data-toggle="tab">Распродажа</a></li>
+					  <li><a href="#popular" data-toggle="tab">Популярные</a></li>
+					  <li><a href="#bestsellers" data-toggle="tab">Хиты продаж</a></li>
+					</ul>
+
+					<div class="tab-content">
+					  <div class="tab-pane active" id="product">
+						<div class='col-xs-12 col-sm-6 col-md-3'>
+							<div class='block-product'>
+								<div class='oval'>
+									<span>скидка <br>7%</span>
+								</div>
+								<div class='product-icon'>
+									<input type="image" src="images/star.png" width="15px" height="15px">
+									<br>
+									<input type="image" src="images/icon1.png" width="15px" height="15px">
+								</div>
+								
+								<div class='product-img center-block'>
+									<img class='center-block' src="images/product1.png" width="139px" height="140px" alt="product" >
+								</div>
+								<p>Смартфон Gigabyte  Classic LTE Black</p>
+								<span>5 990 ₽</span>
+								<br>
+								<button class='center-block'>Купить</button>
+							</div> <!-- /.block-product -->
+						</div> <!-- /.col-xs-6 col-sm-3 col-md-3 -->
+						
+						<div class='col-xs-12 col-sm-6 col-md-3'>
+							<div class='block-product'>
+								<div class='oval'>
+									<span>скидка <br>7%</span>
+								</div>
+								<div class='product-icon'>
+									<input type="image" src="images/star.png" width="15px" height="15px">
+									<br>
+									<input type="image" src="images/icon1.png" width="15px" height="15px">
+								</div>
+								<div class='product-img center-block'>
+									<img class='center-block' src="images/product2.png" width="149px" height="149px" alt="product" >
+								</div>
+								<p>Телефон Apple iPhone 6 64Gb Silver</p>
+								<span>31 990 ₽</span>
+								<br>
+								<button class='center-block'>Купить</button>
+							</div> <!-- /.block-product -->
+						</div> <!-- /.col-xs-6 col-sm-3 col-md-3 -->
+						
+						<div class='col-xs-12 col-sm-6 col-md-3'>
+							<div class='block-product'>
+								<div class='oval'>
+									<span>скидка <br>7%</span>
+								</div>
+								<div class='product-icon'>
+									<input type="image" src="images/star.png" width="15px" height="15px">
+									<br>
+									<input type="image" src="images/icon1.png" width="15px" height="15px">
+								</div>
+								<div class='product-img center-block'>
+									<img class='center-block' src="images/product3.png" width="69px" height="128px" alt="product" >
+								</div>
+								<p>Автомобильный спикерфон JABRA Drive</p>
+								<span>2 490 ₽</span>
+								<br>
+								<button class='center-block'>Купить</button>
+							</div> <!-- /.block-product -->
+						</div> <!-- /.col-xs-6 col-sm-3 col-md-3 -->
+						
+						<div class='col-xs-12 col-sm-6 col-md-3'>
+							<div class='block-product'>
+								<div class='oval'>
+									<span>скидка <br>7%</span>
+								</div>
+								<div class='product-icon'>
+									<input type="image" src="images/star.png" width="15px" height="15px">
+									<br>
+									<input type="image" src="images/icon1.png" width="15px" height="15px">
+								</div>
+								<div class='product-img center-block'>
+									<img class='center-block' src="images/product4.png" width="69.3px" height="142.93px" alt="product" >
+								</div>
+								<p>Смартфон Gigabyte Classic Joy</p>
+								<span>4 490 ₽</span>
+								<br>
+								<button class='center-block'>Купить</button>
+							</div> <!-- /.block-product -->
+						</div> <!-- /.col-xs-6 col-sm-3 col-md-3 -->			
+					
+					  </div> <!-- /#product -->
+					  <div class="tab-pane" id="sale">
+						<h2>Распродажа</h2>
+					  </div>
+					  <div class="tab-pane" id="popular">
+						<h2>Популярные</h2>
+					  </div>
+					  <div class="tab-pane" id="bestsellers">
+						<h2>Хиты продаж</h2>
+					  </div>
+					</div><!-- /.tab-content -->		
+				</div><!-- /.row vcenter -->
+			</section>
+			
+			<!-- NOVELTY -->
+			
+			<section id='novelty'>
+				<div class="row vcenter">
+					<h2>Новинки</h2>
+					<div id="myCarousel" class="carousel slide">
+					  <!-- Carousel items -->
+					  <div class="carousel-inner">
+						<div class="active item">
+							<div class='col-xs-12 col-sm-6 col-md-3'>
+								<div class='block-product'>
+									<div class='product-icon'>
+										<input type="image" src="images/star.png" width="15px" height="15px">
+										<br>
+										<input type="image" src="images/icon1.png" width="15px" height="15px">
+									</div>									
+									<div class='product-img center-block'>
+										<img class='center-block' src="images/product5.png" width="183px" height="118px" alt="product" >
+									</div>
+									<p>Навигатор PRESTIGIO GeoVision 7797 Tour2 / 7"/ 1024x600 / 8Gb</p>
+									<span>5 990 ₽</span>
+									<br>
+									<button class='center-block'>Купить</button>
+								</div> <!-- /.block-product -->
+							</div> <!-- /.col-xs-6 col-sm-3 col-md-3 -->
+										
+							<div class='col-xs-12 col-sm-6 col-md-3'>
+								<div class='block-product'>
+									<div class='oval'>
+										<span>скидка <br>7%</span>
+									</div>
+									<div class='product-icon'>
+										<input type="image" src="images/star.png" width="15px" height="15px">
+										<br>
+										<input type="image" src="images/icon1.png" width="15px" height="15px">
+									</div>
+									<div class='product-img center-block'>
+										<img class='center-block' src="images/product6.png" width="131px" height="141px" alt="product" >
+									</div>
+									<p>Мясорубка Moulinex ME 630139</p>
+									<span>9 990 ₽</span>
+									<br>
+									<button class='center-block'>Купить</button>
+								</div> <!-- /.block-product -->
+							</div> <!-- /.col-xs-6 col-sm-3 col-md-3 -->
+										
+							<div class='col-xs-12 col-sm-6 col-md-3'>
+								<div class='block-product'>
+									<div class='product-icon'>
+										<input type="image" src="images/star.png" width="15px" height="15px">
+										<br>
+										<input type="image" src="images/icon1.png" width="15px" height="15px">
+									</div>
+									<div class='product-img center-block'>
+										<img class='center-block' src="images/product7.png" width="206px" height="145px" alt="product" >
+									</div>
+									<p>Цифровая камера NIKON Coolpix P900 / black / 16.76Мп</p>
+									<span>30 990 ₽</span>
+									<br>
+									<button class='center-block'>Купить</button>
+								</div> <!-- /.block-product -->
+							</div> <!-- /.col-xs-6 col-sm-3 col-md-3 -->
+										
+							<div class='col-xs-12 col-sm-6 col-md-3'>
+								<div class='block-product'>
+									<div class='product-icon'>
+										<input type="image" src="images/star.png" width="15px" height="15px">
+										<br>
+										<input type="image" src="images/icon1.png" width="15px" height="15px">
+									</div>
+									<div class='product-img center-block'>
+										<img class='center-block' src="images/product8.png" width="139px" height="168px" alt="product" >
+									</div>
+									<p>Камера SONY Джойстик GXT 555 Predator Joystick арт. 20567 </p>
+									<span>2 490 ₽</span>
+									<br>
+									<button class='center-block'>Купить</button>
+								</div> <!-- /.block-product -->
+							</div> <!-- /.col-xs-6 col-sm-3 col-md-3 -->
+						</div>
+						
+						<div class="item">
+							<div class='col-xs-12 col-sm-6 col-md-3'>
+								<div class='block-product'>
+								<div class='product-icon'>
+									<input type="image" src="images/star.png" width="15px" height="15px">
+									<br>
+									<input type="image" src="images/icon1.png" width="15px" height="15px">
+								</div>
+									<div class='product-img center-block'>
+										<img class='center-block' src="images/product5.png" width="183px" height="118px" alt="product" >
+									</div>
+									<p>Навигатор PRESTIGIO GeoVision 7797 Tour2 / 7"/ 1024x600 / 8Gb</p>
+									<span>5 990 ₽</span>
+									<br>
+									<button class='center-block'>Купить</button>
+								</div> <!-- /.block-product -->
+							</div> <!-- /.col-xs-6 col-sm-3 col-md-3 -->
+										
+							<div class='col-xs-12 col-sm-6 col-md-3'>
+								<div class='block-product'>
+									<div class='oval'>
+										<span>скидка <br>7%</span>
+									</div>
+									<div class='product-icon'>
+										<input type="image" src="images/star.png" width="15px" height="15px">
+										<br>
+										<input type="image" src="images/icon1.png" width="15px" height="15px">
+									</div>
+									<div class='product-img center-block'>
+										<img class='center-block' src="images/product6.png" width="131px" height="141px" alt="product" >
+									</div>
+									<p>Мясорубка Moulinex ME 630139</p>
+									<span>9 990 ₽</span>
+									<br>
+									<button class='center-block'>Купить</button>
+								</div> <!-- /.block-product -->
+							</div> <!-- /.col-xs-6 col-sm-3 col-md-3 -->
+										
+							<div class='col-xs-12 col-sm-6 col-md-3'>
+								<div class='block-product'>
+									<div class='product-icon'>
+										<input type="image" src="images/star.png" width="15px" height="15px">
+										<br>
+										<input type="image" src="images/icon1.png" width="15px" height="15px">
+									</div>
+									<div class='product-img center-block'>
+										<img class='center-block' src="images/product7.png" width="206px" height="145px" alt="product" >
+									</div>
+									<p>Цифровая камера NIKON Coolpix P900 / black / 16.76Мп</p>
+									<span>30 990 ₽</span>
+									<br>
+									<button class='center-block'>Купить</button>
+								</div> <!-- /.block-product -->
+							</div> <!-- /.col-xs-6 col-sm-3 col-md-3 -->
+										
+							<div class='col-xs-12 col-sm-6 col-md-3'>
+								<div class='block-product'>
+									<div class='product-icon'>
+										<input type="image" src="images/star.png" width="15px" height="15px">
+										<br>
+										<input type="image" src="images/icon1.png" width="15px" height="15px">
+									</div>
+									<div class='product-img center-block'>
+										<img class='center-block' src="images/product8.png" width="139px" height="168px" alt="product" >
+									</div>
+									<p>Камера SONY Джойстик GXT 555 Predator Joystick арт. 20567 </p>
+									<span>2 490 ₽</span>
+									<br>
+									<button class='center-block'>Купить</button>
+								</div> <!-- /.block-product -->
+							</div> <!-- /.col-xs-6 col-sm-3 col-md-3 -->
+						</div>
+						
+						<div class="item">
+							<div class='col-xs-12 col-sm-6 col-md-3'>
+								<div class='block-product'>
+									<div class='product-icon'>
+										<input type="image" src="images/star.png" width="15px" height="15px">
+										<br>
+										<input type="image" src="images/icon1.png" width="15px" height="15px">
+									</div>
+									<div class='product-img center-block'>
+										<img class='center-block' src="images/product5.png" width="183px" height="118px" alt="product" >
+									</div>
+									<p>Навигатор PRESTIGIO GeoVision 7797 Tour2 / 7"/ 1024x600 / 8Gb</p>
+									<span>5 990 ₽</span>
+									<br>
+									<button class='center-block'>Купить</button>
+								</div> <!-- /.block-product -->
+							</div> <!-- /.col-xs-6 col-sm-3 col-md-3 -->
+										
+							<div class='col-xs-12 col-sm-6 col-md-3'>
+								<div class='block-product'>
+									<div class='oval'>
+										<span>скидка <br>7%</span>
+									</div>
+									<div class='product-icon'>
+										<input type="image" src="images/star.png" width="15px" height="15px">
+										<br>
+										<input type="image" src="images/icon1.png" width="15px" height="15px">
+									</div>
+									<div class='product-img center-block'>
+										<img class='center-block' src="images/product6.png" width="131px" height="141px" alt="product" >
+									</div>
+									<p>Мясорубка Moulinex ME 630139</p>
+									<span>9 990 ₽</span>
+									<br>
+									<button class='center-block'>Купить</button>
+								</div> <!-- /.block-product -->
+							</div> <!-- /.col-xs-6 col-sm-3 col-md-3 -->
+										
+							<div class='col-xs-12 col-sm-6 col-md-3'>
+								<div class='block-product'>
+									<div class='product-icon'>
+										<input type="image" src="images/star.png" width="15px" height="15px">
+										<br>
+										<input type="image" src="images/icon1.png" width="15px" height="15px">
+									</div>
+									<div class='product-img center-block'>
+										<img class='center-block' src="images/product7.png" width="206px" height="145px" alt="product" >
+									</div>
+									<p>Цифровая камера NIKON Coolpix P900 / black / 16.76Мп</p>
+									<span>30 990 ₽</span>
+									<br>
+									<button class='center-block'>Купить</button>
+								</div> <!-- /.block-product -->
+							</div> <!-- /.col-xs-6 col-sm-3 col-md-3 -->
+										
+							<div class='col-xs-12 col-sm-6 col-md-3'>
+								<div class='block-product'>
+									<div class='product-icon'>
+										<input type="image" src="images/star.png" width="15px" height="15px">
+										<br>
+										<input type="image" src="images/icon1.png" width="15px" height="15px">
+									</div>
+									<div class='product-img center-block'>
+										<img class='center-block' src="images/product8.png" width="139px" height="168px" alt="product" >
+									</div>
+									<p>Камера SONY Джойстик GXT 555 Predator Joystick арт. 20567 </p>
+									<span>2 490 ₽</span>
+									<br>
+									<button class='center-block'>Купить</button>
+								</div> <!-- /.block-product -->
+							</div> <!-- /.col-xs-6 col-sm-3 col-md-3 -->
+						</div>
+
+					  </div>
+					  
+					<!-- Carousel nav -->
+					<!--
+					  <a class="carousel-control left" id='left' href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+					  <a class="carousel-control right" id='right' href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> -->
+					</div> <!-- /#myCarousel -->					
+		
+				</div><!-- /.row -->
+			</section> <!-- /#novelty -->
+			
+			<!-- BLOG -->
+			
+			<section id="blog">
+				<div class="row">
+					<h2>Наш блог</h2>
+					<div class='col-xs-6 col-sm-8 col-md-8'>
+						<div class='img1' id='blog-img1'>
+							<div class="blog-text">
+								<p><a href="#">Звуки му</a></p>
+								<p>Примущества наушников Bose</p>
+							</div>
+						</div>											
+					</div> <!-- /.col-xs-6 col-sm-8 col-md-8 -->
+					<div class='col-xs-6 col-sm-4 col-md-4'>
+						<div class='img2' id='blog-img2'>
+							<div class="blog-text">
+								<p><a href="#">Видеокамеры старого поколения</a></p>
+								<p>Какие преимущества есть у камер, которыми снимали наши папы?</p>
+							</div>
+						</div>				
+					</div> <!-- /.col-xs-6 col-sm-8 col-md-8 -->					
+				</div><!-- /.row -->
+				<div class="row">		
+					<div class='col-xs-6 col-sm-4 col-md-4'>
+						<div class='img2' id='blog-img3'>
+							<div class="blog-text">
+								<p><a href="#">Геймбои</a></p>
+								<p>Наш обзор на популярные геймбои разных поколений</p>
+							</div>
+						</div>					
+					</div> <!-- /.col-xs-6 col-sm-8 col-md-8 -->
+					<div class='col-xs-6 col-sm-8 col-md-8'>
+						<div class='img1' id='blog-img4'>
+							<div class="blog-text">
+								<p><a href="#">Не айфоном единым</a></p>
+								<p>Камеры каких телефонов могут составить здоровую конкуренцию iPhone?</p>
+							</div>
+						</div>											
+					</div> <!-- /.col-xs-6 col-sm-8 col-md-8 -->
+					<button>Смотреть остальные <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+				</div><!-- /.row -->
+			</section> <!-- /#blog -->
+			
+			<!-- ABOUT -->
+			
+			<section id="about">
+				<div class="row">
+					
+					<div class='col-xs-12 col-sm-6 col-md-6'>
+					<h2>О компании</h2>
+						<p>Сайт, торгующий товарами в Интернете. <br>
+	Позволяет пользователям сформировать заказ на покупку, выбрать способ оплаты и доставки заказа в сети Интернет. Выбрав необходимые товары или услуги, пользователь обычно имеет возможность тут же на сайте выбрать метод оплаты и доставки.
+							<br>
+							<br>
+	Основное отличие Интернет-магазина от традиционного — в типе торговой площадки. 
+	Обычному магазину нужен торговый зал, витрины, ценники, а также продавцы, кассиры и опытные консультанты, у онлайн-магазина же вся инфраструктура реализована программно.
+						</p>
+					</div> <!-- /.col-xs-12 col-sm-6 col-md-6 -->
+					
+					<div class='col-xs-12 col-sm-4 col-md-4 col-md-offset-2'>
+						<div id="form">
+							<p>Оставайтесь на связи!</p>
+							<p>Подпишитесь на наши новости и получите купон на скидку 10%</p>
+							<input class='center-block' type="email" placeholder="Ваш e-mail" required></input>
+							<br>
+							<input type="submit" value="Подписаться"></input>
+						</div> <!-- /#form -->
+					</div> <!-- /.col-xs-12 col-sm-6 col-md-6 col-md-offset-2 -->
+				</div><!-- /.row -->
+			</section> <!-- /#about -->
+		</main>
+		
+		<!-- FOOTER -->
+		
+		<section id="footer">
+			<footer>
+				<div class="row">
+					
+					<div class='col-xs-6 col-sm-4 col-md-2'>
+						<p>Магазин</p>
+						<nav>
+							<ul>
+								<li><a href="#">О компании</a></li>
+								<li><a href="#">Блог магазина</a></li>
+								<li><a href="#">Отзывы покупателей</a></li>
+								<li><a href="#">Бонусные баллы</a></li>
+								<li><a href="#">Подарочные сертификаты</a></li>
+								<li><a href="#">Карта сайта</a></li>
+							</ul>
+						</nav>
+					</div> <!-- /.col-xs-6 col-sm-4 col-md-2 -->
+					
+					<div class='col-xs-6 col-sm-4 col-md-2'>
+						<p>Кабинет покупателя</p>
+						<nav>
+							<ul>
+								<li><a href="#">Войти</a></li>
+								<li><a href="#">Создать учетную запись</a></li>
+								<li><a href="#">Заказы</a></li>
+								<li><a href="#">Отложенные товары</a></li>
+								<li><a href="#">Список сравнения</a></li>
+							</ul>
+						</nav>
+					</div> <!-- /.col-xs-6 col-sm-4 col-md-2 -->
+					
+					<div class='col-xs-6 col-sm-4 col-md-2'>
+						<p>Оформление заказа</p>
+						<nav>
+							<ul>
+								<li><a href="#">Доставка и оплата</a></li>
+								<li><a href="#">Возврат</a></li>
+								<li><a href="#">Store locator</a></li>
+							</ul>
+						</nav>
+					</div> <!-- /.col-xs-6 col-sm-4 col-md-2 -->
+					
+					<div class='col-xs-6 col-sm-4 col-md-3 col-md-offset-1'>
+							<ul id="social">
+								<li><a href="#"><i class="fa fa-square-o" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-square-o" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-square-o" aria-hidden="true"></i></a></li>
+							</ul>
+							<a href="#">sales@demostore.ru</a>
+					</div> <!-- /.col-xs-6 col-sm-4 col-md-2 -->
+					
+					<div class='col-xs-6 col-sm-4 col-md-2'>
+						<p>Контакты</p>							
+						<span>г. Москва, ул. 1-я Дубровская дом 1, офис 100 8-800-000-00-00 (звонок бесплатный) Пн-Пт: 9.00 - 18.00</span>
+					</div> <!-- /.col-xs-6 col-sm-4 col-md-2 -->					
+					
+				</div><!-- /.row -->
+			</footer>
+			
+		</section> <!-- /#footer -->	
+		</div> <!-- /.container-fluid -->
+		
+	</body>
+</html>
+
+	
