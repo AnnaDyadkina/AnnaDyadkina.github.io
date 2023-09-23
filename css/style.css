@@ -533,14 +533,18 @@ body {
 	position:relative;
 }
 
-.img1:hover .blog-text {
+/* .img1:hover .blog-text {
 	background-color: rgba(255, 255, 255, 0);
 }
 
 .img2:hover .blog-text {
 	background-color: rgba(255, 255, 255, 0);
-}
+} */
 
+.img1:hover, img2:hover {
+	box-shadow: 0px 0px 9px rgba(102,102,102,0.5);
+	-webkit-box-shadow: 0px 0px 9px rgba(102,102,102,0.5);
+}
 
 #blog-img1 {
 	background-image: url("../images/headphones.png");
@@ -781,6 +785,9 @@ body {
 		display: flex;
 		justify-content: flex-start;
 		margin-bottom: 5px;
+	}
+	.block-icons-item:hover, .block-product:hover, .blog-img1:hover, .blog-img2:hover {
+		cursor: pointer
 	}
 
 }
